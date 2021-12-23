@@ -1,0 +1,100 @@
+.payment-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 25em;
+    height: auto;
+    box-shadow: 0px 4px 4px 0px #00000033;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    margin: 20px;
+    background-color: #fff;
+    transition: 0.2s;
+    
+}
+
+.payment-card>div, .horizontal-payment-card>div {
+    margin-bottom: 10px;
+    display: inline;
+    position: relative;
+}
+
+.payment-card>div:last-child, .horizontal-payment-card>div:last-child {
+    margin-bottom: 0;
+}
+
+.payment-card .payment-users, .horizontal-payment-card .payment-users{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.payment-card .payment-users p {
+    font-size: 16px;
+}
+
+.paid-icon, .request-icon {
+    display: inherit;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.paid-icon {
+    color: #51B93C;
+}
+
+.request-icon {
+    color: #034DB5;
+}
+
+.payment-amount {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.payment-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    height: -webkit-fill-available;
+    white-space: pre-wrap;
+}
+
+.payment-card .transaction-time, .horizontal-payment-card .transaction-time{
+    margin-left: auto;
+    font-size: 14px;
+    color: #9599A6;
+    /* position: absolute;
+    bottom: 20px;
+    right: 20px; */
+
+}
+
+.payment-card:hover {
+    box-shadow: 0px 4px 4px 0px #ffffff33;
+    background-color: #F4F4F4;
+    transform: scale(1.01);
+}
+
+.horizontal-payment-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* width: calc(100vw * 0.2); */
+    /* min-width: 18em; */
+    width: auto;
+    height: auto;
+    box-shadow: 0px 4px 4px 0px #00000033;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    margin: 20px;
+    background-color: #fff;
+    transition: 0.2s;
+    
+}
+
+.horizontal-payment-card .horizontal-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

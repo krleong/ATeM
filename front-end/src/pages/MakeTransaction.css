@@ -1,0 +1,88 @@
+.make-transaction-page-container {
+    background: var(--blue-to-purple-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+.content-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.make-transaction-page-container .form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30vw;
+    min-width: 250px;
+    max-width: none;
+    margin: 40px 0px;
+}
+
+.form-container h1 {
+    width: auto;
+}
+
+.form-container .button-container{
+    margin-left: auto;
+}
+
+/* .form-container label {
+    margin-right: 10px;
+} */
+
+.form-container > * {
+    margin-bottom: 30px;
+}
+
+.form-container > *:last-child {
+    margin-bottom: 0px;
+}
+
+.payment-type-radios {
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+}
+
+.payment-type-radios > label {
+   
+}
+
+.payment-type-radios > label > input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.payment-type-radios > label > span {
+    padding: 10px 20px;
+    background-color: var(--primary-blue-tint);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.payment-type-radios > label > input:checked + span {
+    color: white;
+    background-color: var(--primary-blue);
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
+}
+
+#send-radio {
+    border-radius: 8px 0px 0px 8px;
+    border-right: 1px solid white;
+}
+
+#request-radio {
+    border-radius: 0px 8px 8px 0px;
+}

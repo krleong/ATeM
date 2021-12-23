@@ -1,0 +1,43 @@
+.page-container {
+    background: var(--blue-to-purple-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+.content-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.form-container h1 {
+    width: auto;
+}
+
+.form-container .button-container{
+    margin-left: auto;
+}
+
+.form-container > * {
+    margin-bottom: 30px;
+}
+
+.form-container > *:last-child {
+    margin-bottom: 0px;
+}

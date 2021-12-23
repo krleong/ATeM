@@ -1,0 +1,36 @@
+.feed-page-container {
+    background: var(--blue-to-purple-gradient);
+    min-height: calc(100vh - 100px);
+    display: block;
+    padding: 40px 200px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#users-icon {
+    font-size: 2.5em;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+}
+
+.feed-header {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.feed-page-container .loader-bar {
+    margin: 0px auto;
+}

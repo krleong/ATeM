@@ -1,0 +1,62 @@
+.textfield-container {
+    position: relative;
+    border: none;
+    font-family: var(--primary-font);
+    width: 100%;
+}
+
+.textfield-input-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.textfield-input {
+    border-radius: 16px;
+    border: 2px solid var(--primary-blue);
+    padding: 20px 15px 10px 15px;
+    font-weight: bold;
+    transition: all 0s, box-shadow 0.2s, background-color 0.2s;
+    min-height: 16px;
+    /* min-width: 150px;
+    max-width: 400px; */
+    width: auto;
+    resize: vertical;
+}
+
+.textfield-label {
+    position: absolute;
+    left: 15px;
+    top: min(30px, 50%);
+    transform: translateY(-50%);
+    font-size: 14px;
+    transition: 0.2s;
+    font-weight: bold;
+    color: var(--secondary-gray);
+    pointer-events: none;
+}
+
+.textfield-container:focus-within .textfield-label, .textfield-label.filled {
+    top: 5px;
+    transform: translateY(0%);
+    font-size: 10px;
+    color: var(--primary-blue);
+}
+
+.textfield-input:focus {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    background-color: var(--primary-blue-tint);
+}
+
+textarea.textfield-input {
+    min-height: 60px;
+}
+
+
+.error-msg>p {
+    color: var(--secondary-red);
+    margin-bottom: 10px;
+}

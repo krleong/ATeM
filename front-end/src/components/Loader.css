@@ -1,0 +1,41 @@
+.loader-bar {
+    width: 300px;
+    height: 5px;
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 0;
+    animation: loading 1s linear infinite alternate;
+    border-radius: 10px;
+}
+
+@keyframes loading {
+    0% {
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: 0;
+        width: 0;
+    }
+    50% {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        width: 50%;
+    }
+    100% {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        width: 0%;
+    }
+}

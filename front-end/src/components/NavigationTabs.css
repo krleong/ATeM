@@ -1,0 +1,44 @@
+#tabs {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#tabs>a {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin-right: 2em;
+    color: black;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#tabs>a:hover {
+    color: var(--primary-purple);
+}
+
+#tabs>a.active {
+    color: var(--primary-blue);
+}
+
+#tabs>a.active::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    bottom: 15px;
+    border-radius: 6px;
+}
+
+.icons {
+    font-size: 1.5em;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
